@@ -1,0 +1,174 @@
+
+*{
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: url(../images/intro-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+header .layout-header{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+header nav,
+header .header-content{
+    z-index: 2;
+}
+header .header-content h1{
+    font-size: 4rem;
+}
+header .header-content p::after{
+    content: '';
+    animation: typing 4s infinite;
+}
+.about-header:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+    left: 0;
+}
+.services .services-parg:after,
+.portfolio .portfolio-parg:after,
+.blog .blog-parg:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #0078ff;
+    width: 45px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .border-10{
+    box-shadow: 0 0 0 10px #0078ff;
+    transition:color 500ms, background-color 500ms , box-shadow 500ms 100ms;
+}
+.services .border-10:hover{
+    color: white;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px rgba(0,120,255,0.3);
+}
+.counters{
+    background-image: linear-gradient(rgba(0,120,255,0.6),rgba(0,120,255,0.6)),url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.counters .overlay{
+    opacity: 0.7;
+}
+.counters .border-10{
+    box-shadow: 0 0 0 10px rgba(207,255,245,0.6);
+}
+.portfolio .item .image img{
+    transition: transform 1s ;
+}
+.portfolio .item .image:hover img{
+    transform: scale(1.4,1.4);
+}
+.testimonial,
+.contact{
+    background-image: linear-gradient(rgba(0,120,255,0.6),rgba(0,120,255,0.6)),url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.testimonial .carousel-indicators{
+    bottom: -3rem;
+}
+.testimonial .carousel-indicators button{
+    width: 1rem;
+    height: 1rem;
+}
+.contact h2:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 6rem;
+    bottom: -15px;
+    left: 0;
+}
+.contact .icon i{
+    box-shadow: 0 0 0 3px #0078ff;
+    transition:color 500ms, background-color 500ms , box-shadow 500ms 100ms;
+}
+.contact .icon i:hover{
+    color: white;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 3px rgba(0,120,255,0.3);
+}
+.contact{
+    box-shadow: 0px 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+footer{
+    background-color: #0062d3;;
+}
+
+@keyframes typing{
+    0%{
+        content: "";
+    }
+    5%{
+        content: "D |";
+    }
+    10%{
+        content:"De |";
+    }
+    15%{
+        content:"Des |";
+    }
+    20%{
+        content:"Desi |";
+    }
+    25%{
+        content:"Desin |";
+    }
+    30%{
+        content:"Desing |";
+    }
+    35%{
+        content:"Desinge |";
+    }
+    40%{
+        content:"Desinger |";
+    }
+    60%{
+        content:"Desinger |";
+    }
+    65%{
+        content:"Desinge |";
+    }
+    70%{
+        content:"Desing |";
+    }
+    75%{
+        content:"Desin |";
+    }
+    80%{
+        content:"Desi |";
+    }
+    85%{
+        content:"Des |";
+    }
+    90%{
+        content:"De |";
+    }
+    95%{
+        content:"D |";
+    }
+    100%{
+        content:" ";
+    }
+}
+.dowm-aside {
+    z-index: 3;
+    bottom: 1rem;
+    right: 1rem;
+}
